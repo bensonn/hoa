@@ -1,5 +1,3 @@
-<!--- Left off on PDF pages 931 on 10/2/25 --->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,115 +9,105 @@
 </head>
 
 <body>
-    <header class="nav">
-        <a href="#" class="brand" aria-label="Home">
-            <!-- simple placeholder logo -->
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <rect x="3" y="3" width="8" height="8" rx="2" />
-                <rect x="13" y="3" width="8" height="8" rx="2" />
-                <rect x="3" y="13" width="8" height="8" rx="2" />
-                <rect x="13" y="13" width="8" height="8" rx="2" />
-            </svg>
-        </a>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" id="LogoLink"><img src="images/hoa-logo.png" alt="Site logo" class="logo"></a>
 
-        <nav aria-label="Primary" class="menu-wrap">
-            <ul class="menu">
-                <li><a href="#" aria-current="page">Community</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Covenants</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="actions">
-            <a class="btn btn-ghost" href="#">Sign in</a>
-            <a class="btn btn-solid" href="#">Register</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="covenants.html">Covenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="membership.html#current-members" class="buttonLink"><button class="primaryButton">Current Members</button></a></li>
+                    <li><a href="community.html#prospective-neighbors" class="buttonLink"><button class="secondaryButton">Prospective
+                                Neighbors</button></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-
-
     <main>
-        <h2>Professional, Compassionate Care for your Pet</h2>
-
-        <p>The caring doctors and staff at Fish Creek Animal Clinic
-            understand the special bond you share with your
-            cherished pet.</p>
-
-
-        <section class="community">
-            <div class="hero-grid">
-                <div class="hero hero-a"></div>
-                <div class="hero hero-b"></div>
+        <div class="hero">
+            <h1>The McLean Hamlet</h1>
+            <h3>A great place for families</h3>
+            <div id="heroActions">
+                <a href="membership.html#current-members"><button class="primaryButton">Current Members</button></a>
+                <a href="community.html#prospective-neighbors"><button class="secondaryButton">Prospective Neighbors</button></a>
             </div>
+        </div>
 
-            <header class="section-head">
-                <h2>What’s New in the Community</h2>
-                <p class="subhead">Subheading</p>
-            </header>
 
-            <div class="cards">
+        <div id="content">
+
+            <!-- Top level event and other advertising -->
+            <div class="events">
                 <!--- first row -->
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
-                </article>
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
-                </article>
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
+                <article class="card primary-card" id="primaryCard01">
+                    <h3><a href="#">4th of July Celebration Recap</a></h3>
+                    <p>Neighbors gathered at the gazebo for games, food, and fireworks. A big thanks to our volunteers
+                        for making it a night to remember!</p>
                 </article>
 
-                <!--- second row -->
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
-                </article>
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
-                </article>
-                <article class="card">
-                    <span class="icon" aria-hidden="true">i</span>
-                    <h3>Title</h3>
-                    <p>Body text for whatever you’d like to say…</p>
+                <article class="card primary-card" id="primaryCard02">
+                    <h3><a href="#">Upcoming Fall Festival</a></h3>
+                    <p>Join us Saturday, October 19th for hayrides, pumpkin carving, and cider at the Hamlet Green.
+                        Volunteers needed—contact events@mcleanhamlet.org.</p>
                 </article>
             </div>
-        </section>
+
+
+            <!--- Community News Tiles -->
+            <h3 class="sectionHeading2">What's New in the Community</h3>
+            <div class="cards">
+                <article class="card">
+                    <h3><a href="#">Neighborhood Watch Update</a></h3>
+                    <p>Fairfax County Police reported lower incident rates this month thanks to community vigilance.</p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="#">Leaf Collection Schedule</a></h3>
+                    <p>County crews will begin leaf pickup on November 10th. Please rake leaves to the curb, not into
+                        the street.</p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="#">School Board Meeting Highlights</a></h3>
+                    <p>Topics included new crosswalk plans near Churchill Road Elementary and after-school program
+                        expansion.</p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="#">Community Path Cleanup</a></h3>
+                    <p>Thanks to our volunteers for helping clear the Snow–Lear Path! We appreciate your hard work and
+                        care.</p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="#">Holiday Decorating Contest</a></h3>
+                    <p>Start planning your displays—the contest begins December 1st! Winners will be featured on our
+                        website.</p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="#">New HOA Board Members</a></h3>
+                    <p>Welcome our newly elected board members and thank you to everyone who participated in this year’s
+                        vote.</p>
+                </article>
+            </div>
+
+        </div>
 
 
 
 
-
-
-
-
-
-
-
-
-        <section>
-            <h3>Years of Experience</h3>
-            <p>Fish Creek Veterinarians have provided
-                personalized and compassionate care
-                since 1984.</p>
-        </section>
 
     </main>
 
     <footer>
-        Copyright &copy; 2020 Fish Creek Animal Clinic<br>
-        <a href="mailto:ccc2sr@virginia.edu">ccc2sr@virginia.edu</a>
+        Copyright &copy; 2025 The McLean Hamlet -
+        Email us: <a href="mailto:ccc2sr@virginia.edu">hamlet@mcleanhamlet.org</a>
     </footer>
     </div>
 </body>
